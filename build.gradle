@@ -15,6 +15,4 @@ buildscript {
     }
 }
 
-apply from : demo1/build.gradle
-apply from : demo2/build.gradle
 
