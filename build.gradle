@@ -1,0 +1,20 @@
+group 'com'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext {
+        springBootVersion = '2.1.3.RELEASE'
+    }
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("io.spring.gradle:dependency-management-plugin:1.0.7.RELEASE")
+    }
+}
+
+apply from : demo1/build.gradle
+apply from : demo2/build.gradle
+
